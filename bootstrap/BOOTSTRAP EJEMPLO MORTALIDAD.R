@@ -1,6 +1,6 @@
 #Ejemplo
 
-mortalidad=read.csv("Mortalidad.csv")
+mortalidad=read.csv("C:/Users/Jose Damian/Desktop/Tareas/BigData20202/bootstrap/Mortalidad.csv")
 dias=mortalidad[,1]*365+mortalidad[,2]
 par(mfrow =c(1,1))
 hist(dias,freq=FALSE)
@@ -40,3 +40,4 @@ for(i in 1:100000){
 }
 hist(p.est.boot)
 c(round(quantile(p.est.boot,alpha.1/2),3),round(quantile(p.est.boot,1-alpha.1/2),3))
+
